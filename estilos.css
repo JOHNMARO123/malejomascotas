@@ -1,0 +1,91 @@
+.porque-confiar, .servicios {
+    padding: 30px;
+}
+
+.porque-confiar h2, .servicios h2, .productos > h2 {
+    text-align: center;
+}
+
+.porque-confiar h3 {
+    font-size: 20px;
+}
+
+.porque-confiar .iconos {
+    font-size: 70px;
+    color: #10dcdc;
+}
+
+.servicios .iconos {
+    font-size: 70px;
+    color: #ff355b;
+}
+
+.boton-servicios {
+    margin: 20px auto;
+}
+
+footer {
+    border-top: 1px solid gray;
+    padding: 10px;
+}
+
+.redes-sociales {
+    font-size: 30px;
+}
+
+
+a{
+	color: #262525;
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+.carrito-total{
+	background: #FC304D;
+	cursor:  pointer;
+	padding: 5px 10px;
+	position: relative;
+}
+.bolsa{
+	background: #f2f2f2;
+	padding:  5px;
+	z-index:  9999;
+}
+.simpleCart_items{
+	width: 100%;
+}
+.simpleCart_items table {
+	width: 100%;
+}
+.simpleCart_shelfItem{
+	padding-top:  15px;
+	padding-bottom: 15px;
+}
+.item-image img{
+	height: auto;
+	width: 80px;
+}
+.item_image,
+.item_Quantity,
+.item_price{
+	margin-bottom: 15px;
+}
+.item_price{
+	font-size: 2em;
+}
+.item-remove a{
+	color: #EC2626;
+}
+
+.item_add{
+	border-radius: 21.5px;
+	border:  thin solid;
+	transition: .5s;
+	padding:  5px 10px;
+}
+.item_add:hover{
+	background: #41DA7B;
+	border:  thin solid #2DC466;
+	color: #fff;
+}

@@ -39,71 +39,6 @@
 
       </div>
   </nav>
-  <div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="3000" >
-              <img src="img/slide-1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="3000">
-              <img src="img/slide-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-interval="3000">
-              <img src="img/slide-3.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-      </div>
-  </div>
-  <section class="porque-confiar">
-    <h2>¿Por que confiar en nosotros?</h2>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col">
-          <div class="iconos">
-            <i class="fa fa-heart"></i>
-          </div>
-          <h3>Amamos los animales tanto como tú</h3>
-          <p class="text-justify">
-            Sabemos lo especiales que son las mascotas en nuestras vidas y 
-            ponemos todo nuestro empeño en brindar el mejor servicio y los 
-            mejores productos para esos seres que tanto amamos.
-          </p>
-        </div>
-        <div class="col">
-          <div class="iconos">
-            <i class="fa fa-stethoscope"></i>
-          </div>
-          <h3>Somos profesionales</h3>
-          <p class="text-justify">Sabemos que para cuidar de tu mascota es necesario 
-            contar con una serie de profesionales en diferentes ámbitos,
-             que permitan darle a tu mascota el cuidado que merece.
-            </p>
-        </div>
-        <div class="col">
-          <div class="iconos">
-            <i class="fa fa-users"></i>
-          </div>
-          <h3>Estamos siempre a tu servicio</h3>
-          <p class="text-justify">Lo mas importante eres tú y tu mascota, por ende estamos dispuestos a darte
-             el mejor servicio posible para que puedas disfrutar de una vida tranquila y sana con tu mascota.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="servicios">
     <h2>Servicios</h2>
     <div class="container">
@@ -127,8 +62,65 @@
           <h3>Peluqueria canina</h3>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="productos">
+    <h2>Productos</h2>
+    
+    <div class="container">
       <div class="row">
-        <a href="servicios.html" class="btn btn-danger boton-servicios">Ver todos los servicios</a>
+        <!--  Contenedor con el nombre principal (simpleCart_shelfItem)
+          todos los items de un loop lo deben de tener -->
+        <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+          <!-- Nombre del producto se obtiene al agregar la clase (item_name) -->
+          <h2 class="item_name">Max Cat</h2>
+          <!-- Imagen del producto se obtiene al agregar la clase (item_image) -->
+          <img class="item_image" src="imagenes/auto_azul.jpg" alt="Max Cat"/>
+          <!-- Cantidad a requerir del producto se obtiene al agregar la clase (item_Quantity) -->
+          <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+          <!-- Precio del producto se obtiene al agregar la clase (item_price) -->
+          <div class="item_price">$17.600</div>
+          <!-- Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+          <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+  
+        </div>
+  
+        <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+          <h2 class="item_name">Pro plan Cat</h2>
+          <img class="item_image" src="imagenes/auto_naranja.jpg" alt="Pro plan Cat"/>
+          <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+          <div class="item_price">$52.700</div>
+          <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+        </div>
+        <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+  
+          <h2 class="item_name">Agility Gold Cat</h2>
+          <img class="item_image" src="imagenes/auto_rojo.jpg" alt="Agility Gold Cat"/>
+          <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+          <div class="item_price">$9.700</div>
+          <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- Carrito de compras y sus items -->
+          <div class='carrito'>
+            
+            <p class="carrito-total">
+              <span class="simpleCart_quantity">0</span> item(s) <span class="simpleCart_total">$0.00</span>
+            </p>
+  
+            <div class="bolsa">
+              <div class="simpleCart_items"></div>
+              <div class="opciones">
+                <a class="boton simpleCart_empty" href="javascript:void(0)">Vaciar carrito</a>
+                <a class="boton simpleCart_checkout" href="#">Checkout</a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
       </div>
     </div>
   </section>
